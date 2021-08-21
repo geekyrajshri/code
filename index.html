@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body class='btn' onload="window.close()" onclick="closeWin()" >
+
+<!-- <button onclick="openWin()">Open "myWindow"</button> -->
+<!-- <button class="btn" onclick="closeWin()">Close "myWindow"</button> -->
+<!-- closeWin() -->
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "myWindow", "width=200,height=100");
+  myWindow.document.write("<p>This is 'myWindow'</p>");
+}
+
+function closeWin() {
+    console.log(window);
+window.open('','_parent','');
+window.close();
+}
+</script>
+
+</body>
+</html>
